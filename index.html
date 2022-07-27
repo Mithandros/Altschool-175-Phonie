@@ -18,32 +18,32 @@
   <main>
     <form action="" method="post">
       <span>Your Name:</span><br>
-      <input type="text" id="fname" name="fname" required>
-      <label for="fname">First name</label>
-      <input type="text" id="lname" name="lname" required>
-      <label for="lname">Last name</label><br>
-      <span>Phone number:</span><br>
-      <label for="ccode">Country code</label>
-      <input type="tel" name="ccode" id="ccode" pattern="[+0-9]{4}" size="4" required>
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" pattern="[0-9]{16}" required>
-            <input type="button" id="check-logo" value="check">
-      
+      <div id="items">
+        <label for="fname">Firstname<input type="text" id="fname" name="fname" required /></label>
+        <label for="lname">Last name<input type="text" id="lname" name="lname" required /></label><br>
+        <span>Phone number:</span><br>
+        <label for="ccode">Country code<input type="tel" name="ccode" id="ccode" pattern="[+0-9]{4}" size="4"
+            required /></label>
+        <label for="phone">Phone number<input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required /></label>
+        
+      </div>
       <span>
         <img id="mtn" class="hidden" src="images/mtn-logo.PNG">
         <img id="glo" class="hidden" src="images/glo-logo.PNG">
         <img id="etisalat" class="hidden" src="images/9mobile-logo.PNG">
         <img id="airtel" class="hidden" src="images/airtel-logo.PNG">
       </span>
+
+  <input type="button" id="check-logo" value="check Provider">
       <br>
       <label for="amount">Amount:</label><br>
-      <input type="text" id="amount" name="amount" value="50-50000"><br>
+      <input type="text" id="amount" name="amount" placeholder="50-50000"><br>
       <p> How can we help you?</p>
-      <div id="services">
-        <input type="radio" id="card" name="card"><label for="card">Airtime</label><br>
-        <input type="radio" id="data" name="data"><label for="data">Data</label><br>
-        <input type="radio" id="both" name="both"><label for="both">Both</label><br>
-      </div>
+      <section id="services">
+        <input type="radio" id="card" name="service"><label for="card">Airtime</label><br>
+        <input type="radio" id="data" name="service"><label for="data">Data</label><br>
+        <input type="radio" id="both" name="service"><label for="both">Both</label><br>
+      </section>
       <button>Submit</button>
     </form>
   </main>
