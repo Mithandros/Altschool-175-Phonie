@@ -1,6 +1,6 @@
 import startApp from './app.mjs';
 
-document.addEventListener('DOMContentLoaded', startApp); 
+document.addEventListener('DOMContentLoaded', startApp);
 
 
 const mtn = document.querySelector('#mtn')
@@ -12,8 +12,9 @@ document.querySelector('#check-logo').addEventListener('click', showTelecomLogo)
 
 
 function showTelecomLogo() {
-    let getVal = document.getElementById('phone').value;
+    let getVal = document.getElementById('phone-num').value;
     let getPhoneCode = getVal.substr(0,4);
+    
     
     
     if (getPhoneCode == "0803" || getPhoneCode == "0806" || getPhoneCode == "0816" || getPhoneCode == "0810" || getPhoneCode == "0813" || getPhoneCode == "0814" || getPhoneCode == "0903" || getPhoneCode == "0906" || getPhoneCode == "0703" || getPhoneCode == "0706"){
